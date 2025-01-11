@@ -1,0 +1,17 @@
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\bin\Debug\net8.0-windows\Calculator3.exe
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\bin\Debug\net8.0-windows\Calculator3.deps.json
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\bin\Debug\net8.0-windows\Calculator3.runtimeconfig.json
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\bin\Debug\net8.0-windows\Calculator3.dll
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\bin\Debug\net8.0-windows\Calculator3.pdb
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\obj\Debug\net8.0-windows\Calculator3.Form1.resources
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\obj\Debug\net8.0-windows\Calculator3.csproj.GenerateResource.cache
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\obj\Debug\net8.0-windows\Calculator3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\obj\Debug\net8.0-windows\Calculator3.AssemblyInfoInputs.cache
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\obj\Debug\net8.0-windows\Calculator3.AssemblyInfo.cs
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\obj\Debug\net8.0-windows\Calculator3.csproj.CoreCompileInputs.cache
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\obj\Debug\net8.0-windows\Calculator3.sourcelink.json
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\obj\Debug\net8.0-windows\Calculator3.dll
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\obj\Debug\net8.0-windows\refint\Calculator3.dll
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\obj\Debug\net8.0-windows\Calculator3.pdb
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\obj\Debug\net8.0-windows\Calculator3.genruntimeconfig.cache
+C:\Users\tuana\Documents\IT\.NET\30 Days 30 .NET Projects\.REPEATTTTTTTTTTTTT\Calculator3\Calculator3\obj\Debug\net8.0-windows\ref\Calculator3.dll
