@@ -1,0 +1,14 @@
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\bin\Debug\net9.0\Q3.exe
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\bin\Debug\net9.0\Q3.deps.json
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\bin\Debug\net9.0\Q3.runtimeconfig.json
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\bin\Debug\net9.0\Q3.dll
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\bin\Debug\net9.0\Q3.pdb
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\obj\Debug\net9.0\Q3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\obj\Debug\net9.0\Q3.AssemblyInfoInputs.cache
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\obj\Debug\net9.0\Q3.AssemblyInfo.cs
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\obj\Debug\net9.0\Q3.csproj.CoreCompileInputs.cache
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\obj\Debug\net9.0\Q3.dll
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\obj\Debug\net9.0\refint\Q3.dll
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\obj\Debug\net9.0\Q3.pdb
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\obj\Debug\net9.0\Q3.genruntimeconfig.cache
+C:\Aidiel\EXERCISES\.LEETCODE\Q3\obj\Debug\net9.0\ref\Q3.dll
