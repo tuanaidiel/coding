@@ -1,0 +1,14 @@
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\obj\Debug\net9.0\Q2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\obj\Debug\net9.0\Q2.AssemblyInfoInputs.cache
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\obj\Debug\net9.0\Q2.AssemblyInfo.cs
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\obj\Debug\net9.0\Q2.csproj.CoreCompileInputs.cache
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\bin\Debug\net9.0\Q2.exe
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\bin\Debug\net9.0\Q2.deps.json
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\bin\Debug\net9.0\Q2.runtimeconfig.json
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\bin\Debug\net9.0\Q2.dll
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\bin\Debug\net9.0\Q2.pdb
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\obj\Debug\net9.0\Q2.dll
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\obj\Debug\net9.0\refint\Q2.dll
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\obj\Debug\net9.0\Q2.pdb
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\obj\Debug\net9.0\Q2.genruntimeconfig.cache
+C:\Aidiel\EXERCISES\.LEETCODE\Q2\obj\Debug\net9.0\ref\Q2.dll

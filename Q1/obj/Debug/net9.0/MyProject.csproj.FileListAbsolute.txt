@@ -1,0 +1,14 @@
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\obj\Debug\net9.0\MyProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\obj\Debug\net9.0\MyProject.AssemblyInfoInputs.cache
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\obj\Debug\net9.0\MyProject.AssemblyInfo.cs
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\obj\Debug\net9.0\MyProject.csproj.CoreCompileInputs.cache
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\bin\Debug\net9.0\MyProject.exe
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\bin\Debug\net9.0\MyProject.deps.json
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\bin\Debug\net9.0\MyProject.runtimeconfig.json
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\bin\Debug\net9.0\MyProject.dll
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\bin\Debug\net9.0\MyProject.pdb
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\obj\Debug\net9.0\MyProject.dll
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\obj\Debug\net9.0\refint\MyProject.dll
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\obj\Debug\net9.0\MyProject.pdb
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\obj\Debug\net9.0\MyProject.genruntimeconfig.cache
+C:\Aidiel\EXERCISES\.LEETCODE\MyProject\obj\Debug\net9.0\ref\MyProject.dll
