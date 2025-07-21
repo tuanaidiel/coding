@@ -1,0 +1,84 @@
+//Task:
+
+Design a simple Blazor form for adding a new employee:
+    1. Fields: Name (required), Email (required, email format), Age (required, minimum 18).
+    2. Include validation messages.
+    3. Form should only submit when all fields are valid.
+
+@page "/add-employee"
+@using System.ComponentModel.DataAnnotations
+
+<h3>Add New Employee</h3>
+
+<EditForm Model="@employee" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <InputText id="name" class="form-control" @bind-Value="employee.Name" />
+        <ValidationMessage For="@(() => employee.Name)" />
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <InputText id="email" class="form-control" @bind-Value="employee.Email" />
+        <ValidationMessage For="@(() => employee.Email)" />
+    </div>
+
+    <div class="form-group">
+        <label for="age">Age:</label>
+        <InputNumber id="age" class="form-control" @bind-Value="employee.Age" />
+        <ValidationMessage For="@(() => employee.Age)" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3" disabled="@(!context.Validate())">Submit</button>
+</EditForm>
+
+@if (isSubmitted)
+{
+    <div class="alert alert-success mt-3">
+        Employee added successfully: @employee.Name
+    </div>
+}
+
+@code {
+    private Employee employee = new Employee();
+    private bool isSubmitted = false;
+
+    private void HandleValidSubmit()
+    {
+        isSubmitted = true;
+        // Here you would typically call a service to save the employee
+    }
+
+    public class Employee
+    {
+        [Required(ErrorMessage = "Name is required")]
+        [StringLength(100, ErrorMessage = "Name cannot exceed 100 characters")]
+        public string Name { get; set; }
+
+        [Required(ErrorMessage = "Email is required")]
+        [EmailAddress(ErrorMessage = "Invalid email format")]
+        public string Email { get; set; }
+
+        [Required(ErrorMessage = "Age is required")]
+        [Range(18, int.MaxValue, ErrorMessage = "Age must be at least 18")]
+        public int Age { get; set; }
+    }
+}
+
+<style>
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .form-control {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 0.25rem;
+    }
+    .validation-message {
+        color: red;
+        font-size: 0.875rem;
+    }
+</style>
