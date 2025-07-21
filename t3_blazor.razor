@@ -1,0 +1,27 @@
+//Write a Blazor (Razor) code snippet that:
+//Accepts a Student object with IsGraduated boolean property.
+//Shows:
+//"🎓 Graduated" if true
+//"📚 Still Studying" if false
+
+@* Student.razor *@
+@code{
+    public class Student
+    {
+        public bool IsGraduated { get; set; }
+    }
+
+    [Parameter]
+    public Student Student { get; set; } = new Student();
+}
+
+<div>
+    @if (Student.IsGraduated)
+    {
+        <span>🎓 Graduated</span>
+    }
+    else
+    {
+        <span>📚 Still Studying</span>
+    }
+</div>
