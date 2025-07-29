@@ -1,0 +1,172 @@
+1. what is the purpose of [ApiController] and [Route("api/[controller]")] 
+in asp.net core api controller
+
+2. In a blazor webassembly, how would you call a backend api to retrieve
+a list of students and display them in a table?
+
+3. Given an Employee entity with properties Id, Name, Position, write a 
+basic LINQ query using EF Core to get all employees with position "Manager"
+
+4. Explain the difference between PUT and PATCH HTTP when updating a resource
+in a RESTFUL Api
+
+5. How does a React frontend typically communicate with an ASP.NET Core 
+backens? Name the tools/libraries involved and a short explanation of 
+how data is fetched.
+
+6. In blazor webassembly app, how would you implmenet authentication and 
+protect a page so that only logged-in users can access it?
+
+7. What's the difference between IActionResult, ActionResult<T>, and just 
+returning T in an API controller?
+
+8. You have two entities: Student and Course. A student can enroll in many
+courses and a course can have many students. How would you define this 
+many-to-many relationship in EntityFramework Core?
+
+9. How would you handle unexpected errors (eg. null reference, database timeout)
+in your ASP.NET Core Web API to return a friendly error message to the frontend
+
+10. In Clean Code Principle, why it is important to seperate concerns 
+(eg. using services instead of pulling logic inside controllers) 
+in ASP.NET Core project?
+
+
+ANSWER
+
+1. [ApiController] used to oversee API specific behaviors and provide 
+problem details for error responses while [Route("api/[controller]")]
+define a base route template for the controller
+
+2. 
+
+3.
+public class Employee
+{
+    public int Id {get;set;}
+    public string Name {get;set;}
+    public string Position {get;set;}
+}
+
+using (var context = new YourDbContext())
+{
+    var managers = context.Employees
+        .Where(e => e.Position == "Manager")
+        .ToList();
+}
+
+4.
+PUT used for entire changes, while PATCH used for slight changes
+
+5.
+react frontend communicate with asp.net core backend via HTTP requests
+(typically RESTful APIs). react sends request to API endpoints exposed 
+by the ASP.NET Core backend, which return JSON data
+
+Tools/libraries
+React: axios or fetch API
+ASP.NET Core: API endpoints ([ApiController])
+
+6. 
+Use ASP.NET identity or any external provider (eg. Azure AD or Auth0) with JWT
+tokens. Configure the backend API to issue tokens and validate them.
+in blazor WASM, AuthenticationStateProvider to manage user state.
+
+Implementation: JWT authentication with ASP.NET identity
+
+services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = configuration["Jwt:Issuer"]
+            ValidAudience = configuration ["Jwt:Audience"]
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(configuration["Jwt:Key])
+            )
+        };
+    });
+
+7. 
+IActionResult: used when you need to return different HTTP status codes
+eg. return Ok(); or return NotFound();
+
+ActionResult<T>: returning specific type T alongside HTTP status codes
+eg. return new ActionResult<Student>(student);
+
+Returning T: Directly returns the object (T)
+eg. return student;
+
+8. 
+public class AppDbContext : DbContext
+{
+    public DbSet<Student> Students {get; set;}
+    public DbSet<Course> Courses {get; set;}
+
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Student>()
+            .HasMany(s => s.Courses)
+            .WithMany(c => c.Students)
+            .UsingEntity(j => j.ToTable("StudentCourses"));
+    }
+}
+
+9.
+public class ExceptionMiddleware
+{
+    private readonly RequestDelegate _next;
+
+    public ExceptionMiddleware(RequestDelegate next)
+    {
+        _next = next;
+    }
+
+    public async Task InvokeAsync (HttpContext context)
+    {
+        try
+        {
+            await _next(context);
+        }
+        catch (Exception ex)
+        {
+            await HandleExceptionAsync(context, ex);
+        }
+    }
+
+    private Task HandleExceptionAsync(HttpContext context, Exception ex)
+    {
+        context.Response.ContentType = "application/json";
+        context.Response.StatusCode = ex switch
+        {
+            NullReferenceException => StatusCodes.Status400BadRequest,
+            DbUpdateException => StatusCodes.Status503ServiceUnavailable,
+            _ => StatusCodes.Status500InternalServerError
+        };
+
+        var response = new
+        {
+            Message = ex switch
+            {
+                NullReferenceException => "Invalid data provided.",
+                DbUpdateException => "Database operation failed. Please try again later",
+                _ => "An unexpected error occured. Please contact support"
+            };
+        };
+
+        return context.Response.WriteAsJsonAsync(response);
+    }
+}
+
+//program.cs 
+
+app.UseMiddleware<ExceptionMiddleware>();
+
+10. 
+- make code easier to read
