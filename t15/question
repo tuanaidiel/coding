@@ -1,0 +1,10 @@
+// 🔧 Task: Create a simple Angular component that displays a greeting message
+
+// Build a component that:
+
+// - Has a TypeScript class with a name variable
+// - Displays the greeting: Hello, [name]!
+// - Let the user change the name using an input field
+// - add a button to clear the name
+
+// Please implement this Angular component (greeting.component.ts and greeting.component.html)
