@@ -1,0 +1,20 @@
+✅ Angular Practical Test (Beginner Level)
+📝 Scenario:
+Create a simple Angular component called CounterComponent that has the following:
+
+📌 Requirements:
+1. A title that says: Simple Counter
+2. A counter that starts from 0
+3. Two buttons:
+    - Increment → increases the counter by 1
+    - Decrement → decreases the counter by 1
+4. The counter should not go below 0
+5. Display the current counter value in the template
+
+📂 File Structure:
+You’ll be working with 2 files inside the counter component folder:
+
+- counter.component.ts
+- counter.component.html
+
+You may assume that the component is already declared in the module.
